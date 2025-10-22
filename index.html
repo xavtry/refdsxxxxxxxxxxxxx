@@ -1,1 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pixel Sniper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Pixel Sniper</h1>
+      <div class="meta">
+        <div>Score: <span id="score">0</span></div>
+        <div>Ammo: <span id="ammo">10</span></div>
+        <div>Time: <span id="time">60</span>s</div>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="game" width="1024" height="640"></canvas>
+
+      <aside class="controls">
+        <button id="startBtn">Start Game</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="mutebtn">Mute</button>
+        <div class="small">Highscore: <span id="highscore">0</span></div>
+        <div class="small">Tip: zoomed pixel look — try on desktop.</div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Made for fun • Click targets to shoot • Press R to reload</small>
+    </footer>
+
+    <!-- tiny audio, optional -->
+    <audio id="sfx-shot" preload="auto">
+      <source src="" />
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
